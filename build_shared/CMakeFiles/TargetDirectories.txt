@@ -1,4 +1,0 @@
-C:/PW8/build_shared/CMakeFiles/game.dir
-C:/PW8/build_shared/CMakeFiles/tic_tac_toe.dir
-C:/PW8/build_shared/CMakeFiles/edit_cache.dir
-C:/PW8/build_shared/CMakeFiles/rebuild_cache.dir
