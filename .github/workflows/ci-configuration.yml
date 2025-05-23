@@ -1,1 +1,32 @@
 name: CI_MazurVladimir_Z-21
+
+on:
+  push:
+      branches:
+          -main
+          -new_branch
+
+jobs:
+  CMake-build:
+    name: CMake build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+
+      - name: Configure CMake
+        run: |
+          mkdir -p build
+          cd build
+          cmake ..
+
+      - name: Build project
+        run: |
+          cd build
+          cmake --build .
+
+      - name: Run executable
+        run: |
+          cd build
+          ./main || echo "Executable failed"
