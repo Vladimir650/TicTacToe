@@ -83,7 +83,9 @@ int main(){
             CreateBoard(field, FieldSize);
 
             while (true) {
+                
                 int row, col;
+
                 while (true) {
                     std::cout << currentPlayer << " (" << currentSymbol << "), enter row and column (e.g., 1 1): ";
                     std::cin >> row >> col;
