@@ -1,7 +1,7 @@
-#include "library\board.hpp"
-#include "library\board.cpp"
-#include "library\check.hpp"
-#include "library\check.cpp"
+#include "library/board.hpp"
+#include "library/board.cpp"
+#include "library/check.hpp"
+#include "library/check.cpp"
 
 #include <iostream>
 #include <limits>
