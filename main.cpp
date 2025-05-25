@@ -83,7 +83,7 @@ int main(){
             CreateBoard(field, FieldSize);
 
             while (true) {
-                
+
                 int row, col;
 
                 while (true) {
@@ -118,16 +118,17 @@ int main(){
             }
         }
 
-        if (menu == 2)
-        {
-            std::cout << "Exit to main menu - Esc" << std::endl;
-            break;
+        else if (menu == 2) {
+            std::cout << "Parameters submenu - press any key to return..." << std::endl;
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+            menu = 0;
         }
 
-        if (menu == 3)
-        {
-            std::cout << "3" << std::endl;
-            break;
+        else if (menu == 3) {
+            std::cout << "History submenu - press any key to return..." << std::endl;
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cin.get();
+            menu = 0;
         }
 
         char c;
