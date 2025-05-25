@@ -5,7 +5,6 @@
 
 #include <iostream>
 #include <limits>
-#include <conio.h>
 #include <string>
 #include <vector>
 
@@ -129,12 +128,10 @@ int main(){
             break;
         }
 
-        while (true) {
-            char c = _getch();  
-            if (c == 27) {  
-                menu = 0;  
-                break;
-            }
+        char c;
+        std::cin >> c;
+        if (c == 27) {  
+            menu = 0;
         }
 
     }
